@@ -282,19 +282,19 @@ h1 {
 .education {
     font-family: "Rubik", sans-serif;
     width: 100%;
-    /*background-image: url("images/background header.jpg");*/
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .education .title{
     font-size: 42px;
-    color: white;
+    color: #FBFF12;
     padding: 25px;
     text-align: center;
     backdrop-filter: blur(5px);
     background-color: transparent;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .education-container{
@@ -310,7 +310,7 @@ h1 {
 }
 
 .university{
-    border-right: 5px solid white;
+    border-right: 5px solid #FBFF12;
 }
 
 .university h1{
