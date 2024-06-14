@@ -71,8 +71,8 @@ a {
 .btn-contact {
     background-color: transparent;
     padding: 8px 16px;
-    border: 1px solid red;
-    color: red;
+    border: 1px solid #FF206E;
+    color: #FF206E;
     border-radius: 3px;
     font-weight: 600;
     cursor: pointer;
@@ -82,7 +82,7 @@ a {
 }
 
 .btn-contact:hover {
-    background-color: red;
+    background-color: #FF206E;
     color: white;
 }
 
@@ -92,16 +92,14 @@ a {
 /* start sidebar */
 
 .side-bar {
-    z-index: 10;
+    z-index: 15;
     width: 300px;
     height: 100%;
-    background-image: url("images/images.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #FFFFFF;
+    color: #0C0F0A;
     position: fixed;
     top: 0;
     left: -300px;
-    color: black;
     font-family: "Rubik", sans-serif;
     transition: 0.4s ease-in-out;
 }
@@ -111,7 +109,6 @@ a {
     display: flex;
     flex-direction: column;
     height: 80vh;
-    backdrop-filter: blur(100px);
 }
 
 .list-side-bar {
