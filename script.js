@@ -1,6 +1,8 @@
 const closeButton = document.querySelector('#closeButton');
 const leftNabBar = document.querySelector('#side-bar');
 const sideBarButton = document.querySelector('#side-bar-button');
+const elementSideBar = document.querySelector('.side-bar-element');
+
 closeButton.addEventListener('click', function closeSideBar() {
     leftNabBar.style.left = '-300px';
     leftNabBar.style.width = '300px';
@@ -14,3 +16,8 @@ sideBarButton.addEventListener('click', function openSideBar() {
     },250)
     closeButton.style.transform = 'rotate(90deg)';
 })
+
+function closeSideBar() {
+    leftNabBar.style.left = '-300px';
+    leftNabBar.style.width = '300px';
+}

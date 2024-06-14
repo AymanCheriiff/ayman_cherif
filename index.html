@@ -19,9 +19,9 @@
             <span>Ayman Cherif</span>
         </div>
         <ul class="list">
-            <li class="element-list">profile</li>
-            <li class="element-list">skills</li>
-            <li class="element-list">education</li>
+            <li class="element-list"><a href="#profile">profile</a></li>
+            <li class="element-list"><a href="#skills">skills</a></li>
+            <li class="element-list"><a href="#education">education</a></li>
             <li class="element-list">projects</li>
             <li class="element-list">contact</li>
         </ul>
@@ -39,63 +39,101 @@
             <i class="bi bi-x-lg" id="closeButton"></i>
         </div>
         <ul class="list-side-bar">
-            <li class="element-list">profile</li>
-            <li class="element-list">skills</li>
-            <li class="element-list">education</li>
-            <li class="element-list">projects</li>
-            <li class="element-list">contact</li>
+            <li class="element-list" onclick="closeSideBar()"><a href="#profile">profile</a></li>
+            <li class="element-list" onclick="closeSideBar()"><a href="#skills">skills</a></li>
+            <li class="element-list" onclick="closeSideBar()"><a href="#education">education</a></li>
+            <li class="element-list" onclick="closeSideBar()">projects</li>
+            <li class="element-list" onclick="closeSideBar()">contact</li>
         </ul>
     </div>
 </div>
 <!--side bar end-->
-<!--header start-->
-<div class="header">
-    <div class="container-header">
-        <div>
-            <img src="images/mois.png">
-        </div>
-        <div class="description">
-            <span class="title">Web Developer</span>
-            <p>I'm a recent graduate with a passion for
-                web development. My academic career has
-                enabled me to acquire solid skills in
-                programming, web design and database
-                database management.</p>
-            <button class="btn-download">Download CV<i class="bi bi-cloud-arrow-down"></i></button>
+<div class="container-holder">
+    <!--header start-->
+    <div class="header" id="profile">
+        <div class="container-header">
+            <div>
+                <img src="images/mois.png">
+            </div>
+            <div class="description">
+                <span class="title">Web Developer</span>
+                <p>I'm a recent graduate with a passion for
+                    web development. My academic career has
+                    enabled me to acquire solid skills in
+                    programming, web design and database
+                    database management.</p>
+                <button class="btn-download">Download CV<i class="bi bi-cloud-arrow-down"></i></button>
+            </div>
         </div>
     </div>
-</div>
-<!--header end-->
-<!--skills start-->
-<div class="skills">
-    <div class="container-skills">
-        <h1>DEV SKILLS</h1>
-        <div class="dev-skills">
-            <div class="skill" id="angular">
-                <span>angular</span>
+    <!--header end-->
+    <!--skills start-->
+    <div class="skills" id="skills">
+        <div class="container-skills">
+            <p class="title">skills</p>
+            <div class="dev-skills">
+                <div class="skill" id="angular">
+                    <span>angular</span>
                     <img src="images/angular.png">
+                </div>
+                <div class="skill" id="spring-boot">
+                    <span>spring-boot</span>
+                    <img src="images/spring-boot.png" width="250px">
+                </div>
+                <div class="skill" id="mysql">
+                    <span>mysql</span>
+                    <img src="images/mysql.png" width="250px">
+                </div>
+                <div class="skill" id="mongo-db">
+                    <span>mongodb</span>
+                    <img src="images/mongodb.png" width="250px">
+                </div>
+                <div class="skill" id="bootstrap">
+                    <span>bootstrap</span>
+                    <img src="images/bootstrap.png" width="250px">
+                </div>
+                <div class="skill" id="html">
+                    <span>html</span>
+                    <img src="images/html.png" width="250px">
+                </div>
+                <div class="skill" id="css">
+                    <span>css</span>
+                    <img src="images/css.png" width="250px">
+                </div>
+                <div class="skill" id="java-script">
+                    <span>java script</span>
+                    <img src="images/java_script.png" width="250px">
+                </div>
+                <div class="skill" id="type-script">
+                    <span>type script</span>
+                    <img src="images/typescirpt.png" width="250px">
+                </div>
+                <div class="skill" id="java">
+                    <span>java</span>
+                    <img src="images/java.png" width="250px">
+                </div>
             </div>
-            <div class="skill" id="spring-boot">
-                <span>spring-boot</span>
-                <img src="images/spring-boot.png" width="250px">
+            <div class="soft-skills"></div>
+        </div>
+    </div>
+    <!--skills end-->
+
+    <!--education start-->
+    <div class="education" id="education">
+        <p class="title"> education </p>
+        <div class="education-container">
+            <div class="university">
+                <h1>Faculté : Institut Supérieur de l'informatique et multimédia de sfax</h1>
+                <p>Licence en Big Data et Analyse de données 2021-2024</p>
             </div>
-            <div class="skill" id="mysql">
-                <span>mysql</span>
-                <img src="images/mysql.png" width="250px">
-            </div>
-            <div class="skill" id="mongo-db">
-                <span>mongodb</span>
-                <img src="images/mongodb.png" width="250px">
-            </div>
-            <div class="skill" id="bootstrap">
-                <span>bootstrap</span>
-                <img src="images/bootstrap.png" width="250px">
+            <div class="high-school">
+                <h1>Lycée : 9 avril 1936</h1>
+                <p>Baccalauréat en informatique 2021</p>
             </div>
         </div>
-        <div class="soft-skills"></div>
     </div>
+    <!--education end-->
 </div>
-<!--skills end-->
 </body>
 <script src="script.js"></script>
 </html>
