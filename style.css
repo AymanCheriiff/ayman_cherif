@@ -307,6 +307,10 @@ h1 {
 .education-container div{
     flex: 1;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .university{
