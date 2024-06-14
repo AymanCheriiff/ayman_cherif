@@ -12,7 +12,7 @@ body {
     background-size: cover;
 }
 
-.container-holder{
+.container-holder {
     background-color: rgba(12, 15, 10, 0.69);
 }
 
@@ -197,7 +197,7 @@ a {
     font-size: 25px;
 }
 
-.bi-cloud-arrow-down{
+.bi-cloud-arrow-down {
     margin-left: 15px;
 }
 
@@ -289,7 +289,7 @@ h1 {
     background-repeat: no-repeat;
 }
 
-.education .title{
+.education .title {
     font-size: 42px;
     color: #FBFF12;
     padding: 25px;
@@ -299,14 +299,14 @@ h1 {
     text-transform: uppercase;
 }
 
-.education-container{
+.education-container {
     display: flex;
     height: fit-content;
     color: white;
     flex-wrap: wrap;
 }
 
-.education-container div{
+.education-container div {
     flex: 1;
     padding: 50px;
     display: flex;
@@ -315,30 +315,84 @@ h1 {
     align-items: center;
 }
 
-.university{
+.university {
     border-right: 5px solid #FBFF12;
 }
 
-.university h1{
+.university h1 {
     border: none;
 }
 
-.university p{
+.university p {
     text-align: center;
     font-size: 32px;
 }
 
-.high-school{
+.high-school {
 
 }
 
-.high-school h1{
+.high-school h1 {
     border: none;
 }
 
-.high-school p{
+.high-school p {
     text-align: center;
     font-size: 32px;
 }
 
 /* education end */
+
+/* contact start */
+
+.contact {
+    width: 100%;
+    background-color: transparent;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+}
+
+.contact-container{
+    width: 100%;
+    padding: 100px 25px;
+}
+
+.contact h1{
+    color: #FBFF12;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 5px;
+    margin: auto;
+    min-width: 250px;
+    max-width: 600px;
+    padding: 25px;
+    color: #FFFFFF;
+    font-size: 18px;
+    /*background-color: #FFFFFF;*/
+}
+
+.form-input{
+    width: 100%;
+    margin-top: 12px;
+    min-height: 35px;
+    background-image: linear-gradient(#FFFFFF, rgba(12, 15, 10, 0.07));
+    outline: none;
+    box-shadow: 0 0 1px #0C0F0A;
+    border: 0;
+    font-size: 18px;
+    padding-left: 12px;
+}
+
+.send-btn{
+    background-color: #FF206E;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+}
+
+/* contact end */

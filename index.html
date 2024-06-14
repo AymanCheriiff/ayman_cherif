@@ -23,10 +23,10 @@
             <li class="element-list"><a href="#skills">compétence</a></li>
             <li class="element-list"><a href="#education">education</a></li>
             <li class="element-list">projects</li>
-            <li class="element-list">contact</li>
+            <li class="element-list"><a href="#contact">contact</a></li>
         </ul>
         <button class="btn-contact">
-            Contact
+            <a href="#contact" style="color: #FF206E">contact</a>
         </button>
     </div>
 </div>
@@ -43,7 +43,7 @@
             <li class="element-list" onclick="closeSideBar()"><a href="#skills">skills</a></li>
             <li class="element-list" onclick="closeSideBar()"><a href="#education">education</a></li>
             <li class="element-list" onclick="closeSideBar()">projects</li>
-            <li class="element-list" onclick="closeSideBar()">contact</li>
+            <li class="element-list" onclick="closeSideBar()"><a href="#contact">contact</a></li>
         </ul>
     </div>
 </div>
@@ -62,7 +62,8 @@
                     enabled me to acquire solid skills in
                     programming, web design and database
                     database management.</p>
-                <button class="btn-download"><a href="/files/ayman_cherif.pdf" style="color: white" download>Télècharger CV<i class="bi bi-cloud-arrow-down"></i></a></button>
+                <button class="btn-download"><a href="/files/ayman_cherif.pdf" style="color: white" download>Télècharger
+                    CV<i class="bi bi-cloud-arrow-down"></i></a></button>
             </div>
         </div>
     </div>
@@ -151,7 +152,53 @@
         </div>
     </div>
     <!--experience end-->
+    <!--contact start-->
+    <div class="contact" id="contact">
+        <div class="contact-container">
+            <h1>Contacter nous</h1>
+            <form>
+                <div>
+                    <label for="name">Nom :</label>
+                    <input class="form-input" type="text" id="name">
+                </div>
+                <div>
+                    <label for="email">Email :</label>
+                    <input class="form-input" type="email" id="email">
+                </div>
+                <div>
+                    <label for="message"> Message :</label>
+                    <textarea class="form-input" rows="5" id="message"></textarea>
+                </div>
+                <div>
+                    <button class="send-btn" id="sendButton">envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--contact end-->
 </div>
 </body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    const sendButton = document.querySelector('#sendButton');
+
+    function sendMessage() {
+        // const nameSender = document.querySelector('#name');
+        const email = document.querySelector('#email');
+        const message = document.querySelector('#message');
+
+        Email.send({
+            SecureToken: "f640fd58-6dcd-4106-9da8-f401276c0f7f",
+            To: 'ayman.cheriif@gmail.com',
+            From: email.value,
+            Subject: "offer d'emploie",
+            Body: message.value
+        }).then(
+            message => alert(message)
+        );
+    }
+
+    sendButton.addEventListener('click', sendMessage)
+</script>
 <script src="script.js"></script>
 </html>
