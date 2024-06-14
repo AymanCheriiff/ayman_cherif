@@ -13,7 +13,7 @@ body {
 }
 
 .container-holder{
-    backdrop-filter: blur(25px);
+    background-color: rgba(12, 15, 10, 0.69);
 }
 
 .bi {
@@ -297,7 +297,6 @@ h1 {
     color: #FBFF12;
     padding: 25px;
     text-align: center;
-    backdrop-filter: blur(5px);
     background-color: transparent;
     margin: 0;
     text-transform: uppercase;
