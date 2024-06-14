@@ -7,6 +7,13 @@ html {
 
 body {
     margin: 0;
+    background-image: url("images/stars.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-holder{
+    backdrop-filter: blur(25px);
 }
 
 .bi {
@@ -15,23 +22,23 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #0C0F0A;
 }
 
 /* start navbar */
 
 .nav-bar {
-    background-color: white;
+    background-color: #FFFFFF;
     width: 100%;
-    color: black;
+    color: #0C0F0A;
     font-family: "Rubik", sans-serif;
-    box-shadow: 0 0 8px black;
+    box-shadow: 0 0 5px #FFFFFF;
     position: fixed;
     z-index: 1;
 }
 
 .container {
-    padding: 12px 75px;
+    padding: 6px 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,16 +154,17 @@ a {
 .header {
     font-family: "Rubik", sans-serif;
     width: 100%;
-    background-image: url("images/background header.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-image: url("images/stars.webp");*/
+    background-color: transparent;
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
 }
 
 .container-header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    backdrop-filter: blur(50px);
+    /*backdrop-filter: blur(50px);*/
     height: 100%;
     padding: 200px 250px;
     gap: 50px;
@@ -169,7 +177,7 @@ a {
 
 .container-header div .title {
     font-size: 62px;
-    color: white;
+    color: #FBFF12;
     font-weight: 600;
 }
 
@@ -179,7 +187,7 @@ a {
 }
 
 .btn-download {
-    background-color: orange;
+    background-color: #FF206E;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -209,7 +217,7 @@ a {
 
 .skills {
     font-family: "Rubik", sans-serif;
-    background-color: white;
+    background-color: transparent;
     width: 100%;
     height: fit-content;
 }
@@ -239,11 +247,11 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     font-size: 32px;
-    color: darkblue;
+    color: #FFFFFF;
     border-radius: 5px;
     font-weight: 700;
     text-transform: capitalize;
-    box-shadow: 0 0 5px darkblue;
+    box-shadow: 0 0 5px #FBFF12;
     transition: ease-in-out 0.4s;
 }
 
@@ -263,8 +271,8 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     padding: 25px;
-    margin-top: 100px;
-    border-bottom: 1px solid darkblue;
+    margin: 0;
+    color: #FBFF12;
 }
 
 /* skills end */
@@ -274,7 +282,7 @@ h1 {
 .education {
     font-family: "Rubik", sans-serif;
     width: 100%;
-    background-image: url("images/background header.jpg");
+    /*background-image: url("images/background header.jpg");*/
     background-size: cover;
     background-repeat: no-repeat;
 }
